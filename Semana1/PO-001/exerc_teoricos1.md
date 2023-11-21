@@ -15,7 +15,7 @@ class Pessoa {
 public:
     string nome;
     int idade;
-};
+}
 
 int main() {
     Pessoa pessoa1;
