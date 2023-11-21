@@ -21,12 +21,10 @@ int main() {
     Pessoa pessoa1;
     pessoa1.nome = "João";
     pessoa1.idade = 25;
-    
-    // Uso dos objetos
-    cout << pessoa2.nome << " tem " << pessoa2.idade << " anos." << endl;
-
+    cout << pessoa2.nome << " tem " << pessoa2.idade << " anos." << endl
     return 0;
 }
+
 ---------------------------------------------------------------------------------------
 // classe Pessoa feito em java
 
@@ -40,8 +38,6 @@ public class Main {
         Pessoa pessoa1 = new Pessoa();
         pessoa1.nome = "João";
         pessoa1.idade = 25;
-        
-        // Uso dos objetos
         System.out.println(pessoa1.nome + " tem " + pessoa1.idade + " anos.");
     }
 }
@@ -61,10 +57,7 @@ int main() {
     Retangulo retangulo1;
     retangulo1.comprimento = 5.0;
     retangulo1.largura = 3.0;
-
-    // Uso dos objetos
     cout << "Área do retângulo 1: " << retangulo1.comprimento * retangulo1.largura << endl;
-
     return 0;
 }
 ---------------------------------------------------------------------------------------------------
@@ -80,8 +73,6 @@ public class Main {
         Retangulo retangulo1 = new Retangulo();
         retangulo1.comprimento = 5.0f;
         retangulo1.largura = 3.0f;
-
-        // Uso dos objetos
         System.out.println("Área do retângulo 1: " + retangulo1.comprimento * retangulo1.largura);
     }
 }
@@ -94,8 +85,6 @@ public class Carro {
     String modelo;
     int ano;
     boolean ligado;
-
-    // Método para ligar o carro
     public void ligar() {
         if (!ligado) {
             System.out.println("Carro ligado.");
@@ -104,8 +93,6 @@ public class Carro {
             System.out.println("O carro já está ligado.");
         }
     }
-
-    // Método para desligar o carro
     public void desligar() {
         if (ligado) {
             System.out.println("Carro desligado.");
@@ -114,22 +101,17 @@ public class Carro {
             System.out.println("O carro já está desligado.");
         }
     }
-
-    // Método para exibir informações do carro
     public void exibirInformacoes() {
         System.out.println("Marca: " + marca);
         System.out.println("Modelo: " + modelo);
         System.out.println("Ano: " + ano);
         System.out.println("Status: " + (ligado ? "Ligado" : "Desligado"));
     }
-
-    // Método main para testar a classe
     public static void main(String[] args) {
         Carro meuCarro = new Carro();
         meuCarro.marca = "Toyota";
         meuCarro.modelo = "Corolla";
         meuCarro.ano = 2022;
-
         meuCarro.exibirInformacoes();
         meuCarro.ligar();
         meuCarro.exibirInformacoes();
@@ -200,11 +182,7 @@ public class TesteHeranca {
     public static void main(String[] args) {
         // Criando uma instância da subclasse
         Cachorro meuCachorro = new Cachorro();
-
-        // Chamando método da superclasse
         meuCachorro.fazerSom();
-
-        // Chamando método da subclasse
         meuCachorro.latir();
     }
 }
@@ -257,7 +235,6 @@ public:
     Pessoa() {
         std::cout << "Construtor Pessoa\n";
     }
-
     ~Pessoa() {
         std::cout << "Destrutor Pessoa\n";
     }
@@ -268,7 +245,6 @@ public:
     Estudante() {
         std::cout << "Construtor Estudante\n";
     }
-
     ~Estudante() {
         std::cout << "Destrutor Estudante\n";
     }
@@ -292,19 +268,14 @@ int main() {
     Cachorro meuCachorro;
     meuCachorro.fazerSom();
     meuCachorro.latir();
-
     Carro meuCarro;
     meuCarro.ligar();
     meuCarro.acelerar();
-
     Gato meuGato;
     meuGato.fazerSom();
-
     Estudante estudante;
-
     Derivada objetoDerivado;
     objetoDerivado.modificarProtegido();
-
     return 0;
 }
 --------------------------------------------------------------------------------
